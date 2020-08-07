@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        html,
+        body,
+        ul.thumb,
+        ul.thumb li {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body,
+        ul.thumb {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        ul.thumb {
+            position: relative;
+            list-style: none;
+            background: -webkit-gradient(radial, 45 45, 50, 50 10, 640, from(#444), to(#333)) !important;
+            background: #333;
+        }
+
+        ul.thumb li {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 6px 6px 24px 6px;
+            background: #FFF;
+            width: 150px;
+            height: 130px;
+            -moz-box-shadow: 1px 1px 6px #222;
+            -webkit-box-shadow: 1px 1px 6px #222;
+            box-shadow: 1px 1px 6px #222;
+            -webkit-transition: all 3s ease-in-out;
+            z-index: 0;
+        }
+
+        ul.thumb li img {
+            width: 100%;
+            height: 100%;
+        }
+
+        ul.thumb li:nth-child(1) {
+            margin-top: -130px;
+            margin-left: -130px;
+            -moz-transform: rotate(30deg);
+            -webkit-transform: rotate(30deg);
+            transform: rotate(19deg);
+            -webkit-filter: blur(4px);
+        }
+
+        ul.thumb li:nth-child(2){
+            margin-top:-120px;
+            margin-left:-10px;
+            -moz-transform:rotate(19deg);
+            -webkit-transform:rotate(19deg);
+            transform:rotate;
+            -webkit-filter:blur(4px);
+        }
+        ul.thumb li:hover {
+            z-index: 10;
+            width: 480px;
+            height: 322px;
+            margin-top: -151px;
+            margin-left: -240px;
+            -moz-box-shadow: 8px 8px 24px #111;
+            -webkit-box-shadow: 8px 8px 24px #111;
+            box-shadow: 8px 8px 24px #111;
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -webkit-filter: blur(0px);
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="thumb">
+        <li><img src="images/huashuai.jpg" width="480" height="322"></li>
+        <li>hello，我是陈星贤，计算机应用技术2班184105218，来自福建莆田的一名帅小伙！</li>
+    </ul>
+    
+</body>
+
+</html>
